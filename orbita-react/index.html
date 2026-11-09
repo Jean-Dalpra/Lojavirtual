@@ -5,6 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Forja Celeste: figuras originales de guardianes, maestros y rivales de mundos fantásticos.">
 <title>Forja Celeste · Figuras de colección</title>
+<script>
+const imagenesFavicon = [
+  "goku3.jpg",
+  "gokubase.jpg",
+  "gokujeans.jpg",
+  "gokupelea.jpg",
+  "gokupelejo.jpg",
+  "gokuriendo.jpg",
+  "gokushiiiii.jpg",
+  "gokusiencabejo.jpg",
+  "gokusmile.jpg",
+  "gokussj3.jpg",
+  "gokustressed.jpg",
+  "gokutod.jpg",
+  "hulk.jpg",
+  "mondonku.jpg",
+  "vegetaespierto.jpg"
+];
+const imagenFavicon = imagenesFavicon[Math.floor(Math.random() * imagenesFavicon.length)];
+const enlaceFavicon = document.createElement("link");
+enlaceFavicon.rel = "icon";
+enlaceFavicon.href = `/images/${imagenFavicon}?v=${Date.now()}`;
+document.head.append(enlaceFavicon);
+</script>
 </head>
 <body>
 <div id="raiz"></div>
